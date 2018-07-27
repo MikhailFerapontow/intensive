@@ -22,9 +22,10 @@ function myfirstapp (name, age) {
 		}
 	}
 	checkAge();
+	let num = prompt('Какое число возвести в квадрат?')
 	function clacPow (num) {
-		document.write('Квадрат числа: ' + num * num)
+		console.log('Квадрат числа: ' + num * num)
 	}
-	clacPow(4)
+	clacPow(num)
 }
 myfirstapp('Михаил', 16)
