@@ -39,7 +39,7 @@ let products = document.querySelectorAll('.product'),
 				btn.textContent = 'Убрать';
 				field.appendChild(item);
 				products[i].style.display = 'none';
-
+				//удаление предмета из корзины
 				btn.addEventListener('click', function () {
 	 			item.style.display = 'none',
 	 			products[i].style.display = 'block';
