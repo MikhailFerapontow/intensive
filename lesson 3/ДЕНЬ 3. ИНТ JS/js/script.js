@@ -36,9 +36,14 @@ let products = document.querySelectorAll('.product'),
 			let item = products[i].cloneNode(true),
 				btn = item.querySelector('button');
 
-				btn.remove();
+				btn.textContent = 'Убрать';
 				field.appendChild(item);
-				products[i].remove();
+				products[i].style.display = 'none';
+
+				btn.addEventListener('click', function () {
+	 			item.style.display = 'none',
+	 			products[i].style.display = 'block';
+	 			 })
 		})
 	}
 	//открыте коризины
@@ -49,6 +54,7 @@ let products = document.querySelectorAll('.product'),
 	 	close.addEventListener('click', function () {
 		cart.style.display = 'none';
 	})
+
 }	
 
 
